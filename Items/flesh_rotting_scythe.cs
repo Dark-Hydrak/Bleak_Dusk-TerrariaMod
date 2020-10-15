@@ -20,7 +20,7 @@ namespace BleakDusk.Items
 			item.width = 40;
 			item.height = 40;
 			item.useTime = 50;
-			item.useAnimation = 50;
+			item.useAnimation = 40;
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 66;
 			item.value = 666;
