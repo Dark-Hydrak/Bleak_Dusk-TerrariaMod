@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ik9ej5mGarYBDwyFuI1qwW0A17NV5SDdQgYB1krxf6VdkIuvqD5t7QQjH66A96tR3EnkqtPfPjdu6h/13DOF8Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\darkh\\OneDrive\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\BleakDusk.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\darkh\\.nuget\\packages\\tmodloader.codeassist\\0.1.1\\tmodloader.codeassist.0.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
