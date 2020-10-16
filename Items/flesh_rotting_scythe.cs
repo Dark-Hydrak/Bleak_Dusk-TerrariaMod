@@ -1,5 +1,6 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
+using BleakDusk.Buffs;
 
 namespace BleakDusk.Items
 {
@@ -9,20 +10,20 @@ namespace BleakDusk.Items
 
         public override void SetStaticDefaults()
 		{
-			// DisplayName.SetDefault("BasicSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			DisplayName.SetDefault("Flesh Rotting Scythe");
 			Tooltip.SetDefault("This is a basic modded sword.");
 		}
 
 		public override void SetDefaults()
 		{
-			item.damage = 666;
+			item.damage = 1;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
 			item.useTime = 50;
 			item.useAnimation = 40;
 			item.useStyle = ItemUseStyleID.SwingThrow;
-			item.knockBack = 66;
+			item.knockBack = 5;
 			item.value = 666;
 			item.rare = ItemRarityID.Red;
 			item.UseSound = SoundID.Item22;
@@ -30,6 +31,17 @@ namespace BleakDusk.Items
 			
 		}
 
+		// We hit the NPC
+		public override void OnHitNPC(Terraria.Player player, Terraria.NPC target, int damage, float knockBack, bool crit)
+        {
+			// Is the NPC a town NPC? (friendly)
+			if (target.friendly == false)
+            {
+				// It's an enemy, apply debuffs to it
+                target.AddBuff(mod.BuffType("Plagueblight"), 300);
+			}
+        }
+		
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);

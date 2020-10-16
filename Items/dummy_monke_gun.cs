@@ -7,7 +7,7 @@ namespace BleakDusk.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("This is a modded gun.");
+			Tooltip.SetDefault("This is a [c/FF0000:monke] gun.");
 		}
 
 		public override void SetDefaults()
@@ -25,7 +25,7 @@ namespace BleakDusk.Items
 			item.rare = ItemRarityID.Green; // the color that the item's name will be in-game
 			item.UseSound = SoundID.Item16; // The sound that this item plays when used.
 			item.autoReuse = true; // if you can hold click to automatically use it again
-			item.shoot = ProjectileID.SandBallFalling; //idk why but all the guns in the vanilla source have this
+			item.shoot = ProjectileID.Bone; //idk why but all the guns in the vanilla source have this
 			item.shootSpeed = 20f; // the speed of the projectile (measured in pixels per frame)
             item.useAmmo = AmmoID.None; // The "ammo Id" of the ammo item that this weapon uses. Note that this is not an item Id, but just a magic value.
 
