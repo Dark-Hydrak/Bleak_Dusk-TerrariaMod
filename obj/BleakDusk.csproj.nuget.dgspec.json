@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\darkh\\OneDrive\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\BleakDusk.csproj": {}
+    "F:\\Documents\\my games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\BleakDusk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\darkh\\OneDrive\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\BleakDusk.csproj": {
+    "F:\\Documents\\my games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\BleakDusk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\darkh\\OneDrive\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\BleakDusk.csproj",
+        "projectUniqueName": "F:\\Documents\\my games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\BleakDusk.csproj",
         "projectName": "BleakDusk",
-        "projectPath": "C:\\Users\\darkh\\OneDrive\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\BleakDusk.csproj",
-        "packagesPath": "C:\\Users\\darkh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\darkh\\OneDrive\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\obj\\",
+        "projectPath": "F:\\Documents\\my games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\BleakDusk.csproj",
+        "packagesPath": "C:\\Users\\wavin\\.nuget\\packages\\",
+        "outputPath": "F:\\Documents\\my games\\Terraria\\ModLoader\\Mod Sources\\BleakDusk\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\darkh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wavin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

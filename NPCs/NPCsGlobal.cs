@@ -6,14 +6,17 @@ namespace BleakDusk.NPCs
 {
     public class NPCsGlobal : GlobalNPC
     {
+        public override bool InstancePerEntity => true;
+
+        Random random = new Random();
         public bool plagueBlight = false;
 
         public override void UpdateLifeRegen(NPC npc, ref int damage)
         {
-            if (plagueBlight == true)
+            if (plagueBlight)
             {
-                Random random = new Random();
-                damage = random.Next(1, 3);
+                damage = random.Next(100, 200);
+                npc.lifeRegen = 0 - damage;
             }
         }
 
