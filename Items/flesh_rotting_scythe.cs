@@ -1,6 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 using BleakDusk.Buffs;
+using BleakDusk.NPCs;
 
 namespace BleakDusk.Items
 {
@@ -16,17 +17,17 @@ namespace BleakDusk.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 1;
+			item.damage = 3;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.useTime = 50;
-			item.useAnimation = 40;
+			item.useTime = 5;
+			item.useAnimation = 10;
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 5;
 			item.value = 666;
 			item.rare = ItemRarityID.Red;
-			item.UseSound = SoundID.Item22;
+			item.UseSound = SoundID.Item1;
             item.autoReuse = true;
 			
 		}
@@ -39,6 +40,7 @@ namespace BleakDusk.Items
             {
 				// It's an enemy, apply debuffs to it
                 target.AddBuff(mod.BuffType("Plagueblight"), 300);
+				target.GetGlobalNPC<NPCsGlobal>().plagueDamage += damage;
 			}
         }
 		
