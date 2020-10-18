@@ -14,16 +14,18 @@ namespace BleakDusk.Items
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("[c/BBBB00:Blast: ]200");
+            Tooltip.SetDefault("[c/BBAA00:Blast: ]200\nA [c/BBAA00:highly-volatile] blade to hunt monsters with!");
         }
 
         public override void SetDefaults()
         {
-            item.damage = 600;
+            item.damage = 45;
             item.melee = true;
             item.rare = ItemRarityID.Expert;
             item.useAnimation = 20;
             item.useTime = 5;
+            item.crit = 0;
+            item.knockBack = 4;
             item.autoReuse = true;
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.UseSound = SoundID.Item1;
