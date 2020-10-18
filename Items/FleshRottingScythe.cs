@@ -5,7 +5,7 @@ using BleakDusk.NPCs;
 
 namespace BleakDusk.Items
 {
-	public class flesh_rotting_scythe : ModItem
+	public class FleshRottingScythe : ModItem
 	{
         private const bool V = true;
 

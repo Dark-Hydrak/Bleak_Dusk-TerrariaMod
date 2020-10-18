@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace BleakDusk.Items
 {
-	public class switchaxe_pickaxe : ModItem
+	public class SwitchAxe : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -20,7 +20,6 @@ namespace BleakDusk.Items
 			item.height = 40;
 			item.useTime = 10;
 			item.useAnimation = 10;
-			item.pick = 220;
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 6;
 			item.value = 10000;

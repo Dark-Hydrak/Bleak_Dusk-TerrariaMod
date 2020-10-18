@@ -22,7 +22,7 @@ namespace BleakDusk.NPCs
         {
             if (plagueBlight)
             {
-                damage += random.Next(plagueDamage, plagueDamage+2);
+                damage += random.Next(plagueDamage, plagueDamage + 2);
                 npc.lifeRegen -= damage;
             }
             else if (plagueBlight == false && plagueDamage > 0)
@@ -32,17 +32,16 @@ namespace BleakDusk.NPCs
 
             if (blastBlight > (npc.lifeMax * 0.05) * (1 + Math.Pow(blastCounts, blastCounts)))
             {
-                blastBlight -= (int)Math.Floor(npc.lifeMax * 0.05)*blastCounts;
+                blastBlight -= (int)Math.Floor(npc.lifeMax * 0.05) * blastCounts;
                 damage += (int)Math.Floor(npc.lifeMax * 0.1);
                 npc.life -= damage;
                 blastCounts++;
-                npc.HitEffect(0, damage);
-                CombatText.NewText(npc.Hitbox, Color.Orange, damage, true, true);
                 Main.PlaySound(SoundID.Item62, npc.position);
+                CombatText.NewText(npc.Hitbox, Color.Red, damage, true, true);
+                npc.HitEffect(0, damage);
             }
             npc.CheckActive();
             npc.checkDead();
         }
-
     }
 }

@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace BleakDusk.Items
 {
-	public class dummy_monke_gun : ModItem
+	public class DummyMonkeGun : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
